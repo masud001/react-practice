@@ -21,6 +21,8 @@ class Person{
     }
 }
 
+
+
 class Teacher extends Person{
     constructor(name, degree){
         super(name);
@@ -32,4 +34,5 @@ class Teacher extends Person{
     }
 }
 
+const teacher = new Teacher("masud", "Bachelor");
 
