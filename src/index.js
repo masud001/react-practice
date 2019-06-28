@@ -11,28 +11,8 @@
 // Learn more about service workers: https://bit.ly/CRA-PWA
 // serviceWorker.unregister();
 
-
-class Person{
-    constructor(name){
-        this.name = name;
-    }
-    walk(){
-        console.log("Walk");
-    }
-}
-
-
-
-class Teacher extends Person{
-    constructor(name, degree){
-        super(name);
-        this.degree = degree;
-    }
-
-    teach(){
-        console.log("teach our-self");
-    }
-}
+import {Teacher} from "./Teacher";
 
 const teacher = new Teacher("masud", "Bachelor");
 
+teacher.teach();
