@@ -30,7 +30,7 @@ class Teacher extends Person{
     }
 
     teach(){
-        console.log("teach");
+        console.log("teach our-self");
     }
 }
 
