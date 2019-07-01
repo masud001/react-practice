@@ -7,10 +7,14 @@ class Counter extends Component {
     render() { 
         return (
             <React.Fragment>
-                <span className="mx-2 my-3">{this.state.count}</span>
-                <button className="btn-primary">Increments</button>
+                <span className="mx-2 my-3">{this.fonrmatCount()}</span>
+                <button className="btn btn-primary">Increments</button>
             </React.Fragment>
         );
+    }
+    fonrmatCount(){
+        const {count} = this.state;
+        return count === 0 ? <span>ZERO</span> : count;
     }
 }
  
