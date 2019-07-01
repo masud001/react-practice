@@ -11,6 +11,7 @@ class Counter extends Component {
         textTransform:"uppercase"
     }
     render() { 
+        
         return (
             <React.Fragment>
                 <img src={this.state.imgUrl} alt={this.state.imgAltText}/>
