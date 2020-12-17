@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div className="App">
 			<header>
-				<h1>😺-Masudur Todo List-npm😃</h1>
+				<h1>😺-Masudur Todo List😃</h1>
 			</header>
 			<Forms />
 			<TodoLists />
