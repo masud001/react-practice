@@ -1,3 +1,7 @@
+# This repository created only for my practice purpose.
+
+Today's learning topic is Props and State. [props and State link](https://www.youtube.com/watch?v=ngVvyalBQcU&list=PL_XxuZqN0xVAvcGzTEAyPSOqgUQA08rNB&index=6)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
