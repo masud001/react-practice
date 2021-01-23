@@ -6,7 +6,7 @@ import React, { Component } from "react";
 class App extends Component {
 	state = {
 		person: [
-			{ name: "Masud", age: "25", address: "Dhaka" },
+			{ name: "Masudur Rahman", age: "25", address: "Dhaka" },
 			{ name: "Dollar", age: "35", address: "Madhnagar" },
 			{ name: "Muhammad", age: "21", address: "Natore" },
 		],
