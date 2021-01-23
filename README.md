@@ -1,6 +1,6 @@
 # This repository created only for my practice purpose.
 
-Today's learning topic is Props and State. [props and State link](https://www.youtube.com/watch?v=ngVvyalBQcU&list=PL_XxuZqN0xVAvcGzTEAyPSOqgUQA08rNB&index=6)
+Today's learning topic is Props and State. [props and State link](https://www.youtube.com/)
 
 # Getting Started with Create React App
 
