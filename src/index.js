@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App />
+		<App locale="bn-BD"/>
 	</React.StrictMode>,
 	document.getElementById("root")
 );

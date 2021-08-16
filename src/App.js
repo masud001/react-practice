@@ -5,6 +5,12 @@ class App extends Component {
 			<React.Fragment>
 				<div className="App">
 					<div className="container">
+						<h1>Hello <span className=" badge bg-danger">React </span></h1>
+						<h1>Today's Date is :
+ 						<span className=" badge badge-dark ">
+ 							{new Date().toLocaleTimeString(this.props.locale)}
+ 						</span>
+ 					</h1>
 						
 					</div>
 				</div>
@@ -12,6 +18,27 @@ class App extends Component {
 		);
 	}
 }
+
+
+// functional components 
+// ----------------------
+
+// function App({locale}) {
+// 	return (
+// 		<React.Fragment>
+// 			<div className="App">
+// 				<div className="container">
+// 					<h1>Hello <span className=" badge bg-danger">React </span> </h1>
+// 					<h1>Today's Date is :
+// 						<span className=" badge badge-dark ">
+// 							{new Date().toLocaleTimeString(locale)}
+// 						</span>
+// 					</h1>
+// 				</div>
+// 			</div>
+// 		</React.Fragment>
+// 	)
+// }
 
 export default App;
 
