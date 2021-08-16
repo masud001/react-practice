@@ -5,7 +5,7 @@ class App extends Component {
 		return (
 			<React.Fragment>
 				<div className="App">
-					<Clock locale="bn-BD"/>
+					<Clock/>
 				</div>
 			</React.Fragment>
 		);
