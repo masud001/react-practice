@@ -1,19 +1,20 @@
-import React, { Component } from "react";
-import Clock from './Components/Clock'
+import React, { Component } from 'react';
+import ClockList from './Components/ClockList';
 class App extends Component {
 	render() {
+		console.log('this is App component');
+		const quantity = [1, 2, 3, 4];
 		return (
 			<React.Fragment>
-				<div className="App">
-					<Clock/>
+				<div className='App'>
+					<ClockList quantity={quantity} />
 				</div>
 			</React.Fragment>
 		);
 	}
 }
 
-
-// functional components 
+// functional components
 // ----------------------
 
 // function App({locale}) {
@@ -34,4 +35,3 @@ class App extends Component {
 // }
 
 export default App;
-
