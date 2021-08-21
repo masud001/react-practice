@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import Forms from './Components/Forms';
+import Calculator from './Components/Calculator';
+
 class App extends Component {
 	render() {
 		return (
 			<React.Fragment>
 				<div className='App'>
 					<div className='container'>
-						<h1 className=' text-capitalize '>Forms validation</h1>
+						<h1 className=' text-capitalize '>Lifting State Up</h1>
 						<hr />
-						<Forms />
+						<Calculator />
 					</div>
 				</div>
 			</React.Fragment>
