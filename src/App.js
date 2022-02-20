@@ -15,7 +15,6 @@ class App extends Component {
 					<div className='container'>
 						<h1 className=' text-capitalize '>Higher-Order Components render props</h1>
 						<hr />
-
 						<Counter>
 							{(count, counterIncrement) => (
 								<ClickCounter count={count} counterIncrement={counterIncrement} />
