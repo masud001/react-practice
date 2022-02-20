@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/masud001/react-practice/issues"
   },
-  "homepage": "https://github.com/masud001/react-practice#readme"
+  "homepage": "https://github.com/masud001/react-practice#readme",
+  "dependencies": {
+    "redux": "^4.1.2"
+  }
 }
