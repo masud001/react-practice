@@ -1,6 +1,0 @@
-{
-    "editor.snippetSuggestions": "bottom",
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    }
-}
