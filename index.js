@@ -20,7 +20,7 @@ function buyCake() {
 
 function buyIceCream() {
 	return {
-		type: 'BUY_ICE_CERAM',
+		type: BUY_ICE_CERAM,
 		info: 'this is second redux action',
 	};
 }
@@ -40,7 +40,6 @@ const reducerCake = (state = initialCakeState, action) => {
 				...state,
 				numOfCakes: state.numOfCakes - 1,
 			};
-
 		default:
 			return state;
 	}
