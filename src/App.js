@@ -6,9 +6,22 @@ import HookCakeContainer from './components/HookCakeContainer';
 import IceCreamContainer from './components/IceCreamContainer';
 import HookIceCreamContainer from './components/HookIceCreamContainer';
 import ItemsContainer from './components/ItemsContainer';
+import UserContainer from './components/UserContainer';
 function App() {
 	return (
 		<Provider store={store}>
+			<div className='container mt-4 mb-4'>
+				<div className='row'>
+					<div className='col-md-12'>
+						<div className='card'>
+							<div className='card-body'>
+								<UserContainer />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div className='container py-5'>
 				<div className='container'>
 					<div className='row'>
