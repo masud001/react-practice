@@ -1,61 +1,25 @@
-import CakeContainer from './components/CakeContainer';
-import NewCakeContainer from './components/NewCakeContainer';
-import { Provider } from 'react-redux';
-import store from './redux/store';
-import HookCakeContainer from './components/HookCakeContainer';
-import IceCreamContainer from './components/IceCreamContainer';
-import HookIceCreamContainer from './components/HookIceCreamContainer';
-import ItemsContainer from './components/ItemsContainer';
-import UserContainer from './components/UserContainer';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import AddUser from './pages/AddUser';
+import EditUser from './pages/EditUser';
+import Other from './pages/Other';
 function App() {
 	return (
-		<Provider store={store}>
-			<div className='container mt-4 mb-4'>
-				<div className='row'>
-					<div className='col-md-12'>
-						<div className='card'>
-							<div className='card-body'>
-								<UserContainer />
-							</div>
-						</div>
-					</div>
-				</div>
+		<React.Fragment>
+			<div className='text-center'>
+				<h1 className='text-capitalize'>
+					react-redux <span className='badge bg-info text-uppercase'>crud</span>
+				</h1>
+				<hr />
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='add-user' element={<AddUser />} />
+					<Route path='edit-user/:id' element={<EditUser />} />
+					<Route path='other' element={<Other />} />
+				</Routes>
 			</div>
-
-			<div className='container py-5'>
-				<div className='container'>
-					<div className='row'>
-						<div className='col-md-6 offset-md-3'>
-							<ItemsContainer cake />
-							<ItemsContainer />
-							<NewCakeContainer />
-						</div>
-					</div>
-				</div>
-			</div>
-			<div className='container  mt-5 '>
-				<div className='row'>
-					<div className='col-md-6'>
-						<div className='card'>
-							<div className='card-body'>
-								<h4 className=' card-title'> without hooks</h4>
-								<CakeContainer />
-								<IceCreamContainer />
-							</div>
-						</div>
-					</div>
-					<div className='col-md-6'>
-						<div className='card'>
-							<div className='card-body'>
-								<h4 className=' card-title'> with hooks</h4>
-								<HookCakeContainer />
-								<HookIceCreamContainer />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</Provider>
+		</React.Fragment>
 	);
 }
 

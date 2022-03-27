@@ -1,0 +1,33 @@
+{
+  "user": [
+    {
+      "name": "Masud",
+      "address": "Natore",
+      "email": "masud@gmail.com",
+      "contact": "01709036155",
+      "id": 1
+    },
+    {
+      "name": "Masud-2",
+      "address": "Natore",
+      "email": "masud@gmail.com",
+      "contact": "01709036155",
+      "id": 2
+    },
+    {
+      "name": "Masudur Rahman",
+      "address": "Dhaka",
+      "email": "masud@gmail.com",
+      "contact": "12345",
+      "": "m",
+      "id": 3
+    },
+    {
+      "name": "alom molla",
+      "address": "alom",
+      "email": "alom",
+      "contact": "alom",
+      "id": 4
+    }
+  ]
+}
