@@ -7,9 +7,19 @@ import IceCreamContainer from './components/IceCreamContainer';
 import HookIceCreamContainer from './components/HookIceCreamContainer';
 import ItemsContainer from './components/ItemsContainer';
 import UserContainer from './components/UserContainer';
+import User from './components/User';
 function App() {
 	return (
 		<Provider store={store}>
+			<div className=''>
+				<div className='container'>
+					<div className='row'>
+						<div className='card'>
+							<User />
+						</div>
+					</div>
+				</div>
+			</div>
 			<div className='container mt-4 mb-4'>
 				<div className='row'>
 					<div className='col-md-12'>
