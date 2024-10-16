@@ -1,30 +1,42 @@
-import { useState,useRef } from 'react'
-import './App.css'
+// src/App.js
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Home from './components/Home';
+import CandidateRegistration from './components/CandidateRegistration';
+import CandidateList from './components/CandidateList';
 
+const App = () => {
+  const [candidates, setCandidates] = useState([]);
 
-
-function App() {
-  const ref = useRef(0);
-  const [count, setCount] = useState(0)
-  console.log("ref",ref.current);
-
-  const handleClick = () => {
-    ref.current = ref.current + 1;
-    
-  }
+  const handleRegister = (candidate) => {
+    setCandidates([...candidates, candidate]);
+  };
 
   return (
-    <>
-      <div className="">
-        <button onClick={handleClick}> ref click {ref.current} </button>
-      </div>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-    
-    </>
-   
-  )
-}
+    <Router>
+      <nav>
+        <Link to="/" data-testid="nav-home-btn">Home</Link>
+        <Link to="/candidate/registration" data-testid="nav-registration-btn">Candidate Registration</Link>
+        <Link to="/candidate/list" data-testid="nav-list-btn">Candidate List ({candidates.length})</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/candidate/registration"
+          element={
+            <CandidateRegistration
+              onRegister={handleRegister}
+              existingEmails={candidates.map((c) => c.email)}
+            />
+          }
+        />
+        <Route
+          path="/candidate/list"
+          element={<CandidateList candidates={candidates} />}
+        />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
