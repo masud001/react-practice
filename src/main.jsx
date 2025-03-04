@@ -1,9 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+
+// import UseRefComponent from "./UseRefComponent";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    {/* under stand useRef Hooks 
+     */}
+    {/* < UseRefComponent/> */}
+    
   </StrictMode>,
 )
